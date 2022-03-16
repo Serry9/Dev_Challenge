@@ -1,0 +1,6 @@
+SELECT nombre, apellido, teléfono, email, 
+FROM empleados
+WHERE antiguedad BETWEEN '10' AND '15'
+GROUP BY puesto
+ORDER BY municipalidad
+HAVING AVG(salario) > 70000
